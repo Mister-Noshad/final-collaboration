@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Animated Header</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <!-- Background animated dots -->
+        <div class="dots-background"></div>
+
+        <div class="header-container">
+            <!-- Logo section -->
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-cube"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">NEXUS</span>
+                    <span class="logo-sub">Responsive Design</span>
+                </div>
+            </div>
+
+            <!-- Navigation menu -->
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Call to action buttons -->
+            <div class="header-actions">
+                <button class="btn btn-outline">
+                    <i class="fas fa-user"></i>
+                    <span>Sign In</span>
+                </button>
+                <button class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    <span>Get Started</span>
+                </button>
+            </div>
+
+            <!-- Mobile menu toggle -->
+            <button class="mobile-toggle" id="mobileToggle">
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+            </button>
+        </div>
+
+        <!-- Mobile menu (hidden by default) -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item"><a href="#" class="mobile-nav-link active">Home</a></li>
+                <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">Features</a></li>
+                <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">Services</a></li>
+                <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">Portfolio</a></li>
+                <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">Contact</a></li>
+                <li class="mobile-nav-item">
+                    <button class="btn btn-outline mobile-btn">Sign In</button>
+                </li>
+                <li class="mobile-nav-item">
+                    <button class="btn btn-primary mobile-btn">Get Started</button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Body Parts</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <h1>Interactive Body Parts</h1>
+                <p class="subtitle">Hover over or click on each body part to see responsive animations</p>
+                <div class="instructions">
+                    <i class="fas fa-mouse-pointer"></i> Move cursor near elements to see interactive effects
+                </div>
+            </header>
+
+            <main class="body-parts-container">
+                <!-- Heart Section -->
+                <div class="body-part-card" id="heart-card">
+                    <div class="body-part-header">
+                        <h2><i class="fas fa-heart"></i> Heart</h2>
+                        <span class="part-label">Circulatory System</span>
+                    </div>
+                    <div class="body-part-visual">
+                        <div class="heart-container">
+                            <div class="heart"></div>
+                            <div class="pulse-ring"></div>
+                            <div class="pulse-ring delay-1"></div>
+                            <div class="pulse-ring delay-2"></div>
+                        </div>
+                        <div class="interactive-dots" id="heart-dots"></div>
+                    </div>
+                    <div class="body-part-info">
+                        <p>The heart pumps blood throughout the body, delivering oxygen and nutrients to tissues.</p>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="stat-value">72</span>
+                                <span class="stat-label">BPM</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">5L</span>
+                                <span class="stat-label">Blood</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="action-btn" data-part="heart">
+                        <i class="fas fa-heartbeat"></i> Simulate Beat
+                    </button>
+                </div>
+
+                <!-- Brain Section -->
+                <div class="body-part-card" id="brain-card">
+                    <div class="body-part-header">
+                        <h2><i class="fas fa-brain"></i> Brain</h2>
+                        <span class="part-label">Nervous System</span>
+                    </div>
+                    <div class="body-part-visual">
+                        <div class="brain-container">
+                            <div class="brain-left"></div>
+                            <div class="brain-right"></div>
+                            <div class="brain-stem"></div>
+                        </div>
+                        <div class="interactive-dots" id="brain-dots"></div>
+                    </div>
+                    <div class="body-part-info">
+                        <p>The brain is the control center of the body, processing information from senses and
+                            controlling movement.</p>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="stat-value">86B</span>
+                                <span class="stat-label">Neurons</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">20%</span>
+                                <span class="stat-label">Energy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="action-btn" data-part="brain">
+                        <i class="fas fa-bolt"></i> Stimulate Activity
+                    </button>
+                </div>
+
+                <!-- Lungs Section -->
+                <div class="body-part-card" id="lungs-card">
+                    <div class="body-part-header">
+                        <h2><i class="fas fa-lungs"></i> Lungs</h2>
+                        <span class="part-label">Respiratory System</span>
+                    </div>
+                    <div class="body-part-visual">
+                        <div class="lungs-container">
+                            <div class="lung left-lung"></div>
+                            <div class="lung right-lung"></div>
+                            <div class="trachea"></div>
+                        </div>
+                        <div class="interactive-dots" id="lungs-dots"></div>
+                    </div>
+                    <div class="body-part-info">
+                        <p>The lungs facilitate gas exchange, taking in oxygen and releasing carbon dioxide with each
+                            breath.</p>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="stat-value">12-16</span>
+                                <span class="stat-label">Breaths/min</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">6L</span>
+                                <span class="stat-label">Capacity</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="action-btn" data-part="lungs">
+                        <i class="fas fa-wind"></i> Simulate Breath
+                    </button>
+                </div>
+
+                <!-- Eye Section -->
+                <div class="body-part-card" id="eye-card">
+                    <div class="body-part-header">
+                        <h2><i class="fas fa-eye"></i> Eye</h2>
+                        <span class="part-label">Visual System</span>
+                    </div>
+                    <div class="body-part-visual">
+                        <div class="eye-container">
+                            <div class="eyeball">
+                                <div class="iris"></div>
+                                <div class="pupil"></div>
+                                <div class="highlight"></div>
+                            </div>
+                            <div class="eyelid top"></div>
+                            <div class="eyelid bottom"></div>
+                        </div>
+                        <div class="interactive-dots" id="eye-dots"></div>
+                    </div>
+                    <div class="body-part-info">
+                        <p>The eye detects light and converts it into electro-chemical impulses sent to the brain for
+                            visual perception.</p>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="stat-value">576MP</span>
+                                <span class="stat-label">Resolution</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">10M</span>
+                                <span class="stat-label">Colors</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="action-btn" data-part="eye">
+                        <i class="fas fa-eye"></i> Simulate Blink
+                    </button>
+                </div>
+            </main>
+
+            <footer>
+                <p>Move your cursor around the screen to see interactive dot effects</p>
+                <div class="controls">
+                    <button id="reset-btn">
+                        <i class="fas fa-redo"></i> Reset Animations
+                    </button>
+                    <button id="toggle-dots">
+                        <i class="fas fa-circle"></i> Toggle Dots
+                    </button>
+                </div>
+            </footer>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+    </html>
+
+
+
+
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Animated Footer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="content">
+            <h1>Responsive Footer Demo</h1>
+            <p>This page demonstrates a fully responsive footer with high-level animations.</p>
+            <p>Resize your browser window to see how the footer adapts to different screen sizes.</p>
+            <div class="animation-area">
+                <div class="dots-container" id="dotsContainer"></div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <!-- Animated background dots -->
+        <div class="footer-dots" id="footerDots"></div>
+        
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-cube"></i>
+                    <span>AnimateCorp</span>
+                </div>
+                <p class="footer-description">Creating beautiful, responsive web experiences with cutting-edge animations.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Services</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3 class="footer-heading">Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Web Development</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> UI/UX Design</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Animation</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> SEO Optimization</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Branding</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3 class="footer-heading">Contact Info</h3>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Animation Street, Web City</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> info@animatecorp.com</li>
+                </ul>
+                <div class="newsletter">
+                    <h4>Subscribe to Newsletter</h4>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 AnimateCorp. All rights reserved. | Designed with <i class="fas fa-heart"></i> and animations</p>
+            <div class="footer-extra">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+        
+        <!-- Back to top button -->
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
